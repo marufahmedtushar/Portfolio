@@ -1,12 +1,28 @@
 import React from 'react'
 import './Portfolio.css';
-
+import Project from '../../components/Project/Project';
+const projects = [
+{id:1, name:'Coding Hero', technologies:'HTML5, CSS3, Bootstrap 4', features:'Tried to make a copy of the Programming Hero’s Course landing page . Login and Registration page are also included.',
+img:'images/code.png',link:'https://marufahmedtushar.github.io/Coding_Hero-demo.github.io/index.html'},
+{id:2, name:'SKOKOV', technologies:'HTML5, CSS3, Bootstrap 4', features:'Here i have tried to convert a psd design to html and this is responsive too.',
+img:'images/skokov.jpg',link:'https://marufahmedtushar.github.io/SKOKOV.github.io/index.html'},
+{id:3, name:'Abacus Convention Center', technologies:'HTML5, CSS3, Bootstrap 5.', features:'This is a figma to html converted static site and also responsive.',
+img:'images/abacus.jpg',link:'https://marufahmedtushar.github.io/convention-center/index.html'},
+{id:4, name:'Wise Learners', technologies:'HTML5, CSS3, Bootstrap 5', features:'This is a figma to html converted static site and also responsive.',
+img:'images/wise.png',link:'https://wise-learners.netlify.app/' },
+{id:4, name:'Wise Learners', technologies:'20s', features:'20-25',
+img:'',link:'' },
+{id:4, name:'Wise Learners', technologies:'20s', features:'20-25',
+img:'',link:'' },
+{id:4, name:'Wise Learners', technologies:'20s', features:'20-25',
+img:'',link:'' },
+]
 
 const Portfolio = () => {
 	return (
 <div>
 	{/*Section-1*/}
-	<section className="section1 bg-light pb-5 pt-5" id="slider">
+	<section className="section1 bg-light pb-5 pt-5" id="home">
 		<div className="container-fluid p-0">
 			<img src="images/bg.jpg" className="img-fluid" alt=""/>
 			<div className="name-container d-flex justify-content-center">
@@ -18,15 +34,15 @@ const Portfolio = () => {
 						<span
 							className="txt-rotate"
 							data-period="2000"
-						data-rotate='[ "CSE Graduate.", "Web Developer." ]'></span>
+						data-rotate='[ "CSE Graduate.","Front-End Developer.", "Web Developer." ]'></span>
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	{/*Section-1*/}
-	<section className="section1 pb-2" id="slider1">
-		<div className="container py-5">
+	<section className="section1 pb-2" id="home1">
+		<div className="container p-0">
 			<img src="images/bg.jpg" className="img-fluid" alt=""/>
 			<div className="caption d-flex justify-content-center align-items-center flex-column p-3">
 				<h1 className="text-light fw-bold">Hi,</h1>
@@ -104,93 +120,21 @@ const Portfolio = () => {
 			</div>
 			<div className="courses mt-4">
 				<div className="row">
-					<div className="col-lg-6 col-12 col-sm-12">
-						<div className="card mb-3 border-0 shadow-lg">
-							<div className="row g-0">
-								<div className="col-md-4">
-									<img src="images/code.png" className="img-fluid rounded-start" alt="..."/>
-								</div>
-								<div className="col-md-8">
-									<div className="card-body">
-										<h5 className="card-title fw-semibold text-capitalize">Coding Hero</h5>
-										<p className="card-text">This static side is inspired from Programming hero.Here i have tried to make same properties of font-end of Programming hero.</p>
-										<p className="card-text"><small>Link :  https://marufahmedtushar.github.io/Coding_Hero-demo.github.io/index.html</small></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-6 col-md-12 col-sm-12">
-						<div className="card mb-3 border-0 shadow-lg">
-							<div className="row g-0">
-								<div className="col-md-4">
-									<img src="images/skokov.jpg" className="img-fluid rounded-start h-100" alt="..."/>
-								</div>
-								<div className="col-md-8">
-									<div className="card-body">
-										<h5 className="card-title fw-semibold text-capitalize">skokov</h5>
-										<p className="card-text">Here i have tried to convert a psd design to html and this is responsive too.</p>
-										<p className="card-text"><small>Link : https://marufahmedtushar.github.io/SKOKOV.github.io/index.html</small></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					
-				</div><div className="row">
-				<div className="col-lg-6 col-md-12 col-sm-12">
-					<div className="card mb-3 border-0 shadow-lg">
-						<div className="row g-0">
-							<div className="col-md-4">
-								<img src="images/world_cup.jpg" className="img-fluid rounded-start h-100" alt="..."/>
-							</div>
-							<div className="col-md-8">
-								<div className="card-body">
-									<h5 className="card-title fw-semibold">World Cup</h5>
-									<p className="card-text">This is a figma to html converted static site and also responsive.</p>
-									<p className="card-text"><small>Link : https://marufahmedtushar.github.io/world_cup/index.html</small></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="col-lg-6 col-md-12 col-sm-12">
-					<div className="card mb-3 border-0 shadow-lg">
-						<div className="row g-0">
-							<div className="col-md-4">
-								<img src="images/abacus.jpg" className="img-fluid rounded-start h-100" alt="..."/>
-							</div>
-							<div className="col-md-8">
-								<div className="card-body">
-									<h5 className="card-title fw-semibold">Abacus Convention Center</h5>
-									<p className="card-text">This is a figma to html converted static site and also responsive.</p>
-									<p className="card-text"><small>Link : https://marufahmedtushar.github.io/convention-center/index.html</small></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+
+							{
+				projects.map(project => <Project
+				key={project.id}
+				project={project}
 				
-			</div>
-			<div className="row">
-				<div className="col-lg-6 col-md-12 col-sm-12">
-					<div className="card mb-3 border-0 shadow-lg">
-						<div className="row g-0">
-							<div className="col-md-4">
-								<img src="images/donate.jpg" className="img-fluid rounded-start h-100" alt="..."/>
-							</div>
-							<div className="col-md-8">
-								<div className="card-body">
-									<h5 className="card-title fw-semibold">Photography Basic Rules</h5>
-									<p className="card-text">This is a figma to html converted static site and also responsive.</p>
-									<p className="card-text"><small>Link : https://marufahmedtushar.github.io/donate/</small></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				
-			</div>
+				></Project>)
+				}
+				
+					
+					
+				</div>
+			
 		</div>
 		
 	</div>
@@ -218,8 +162,8 @@ const Portfolio = () => {
 		<div className="pborder">
 			<div className="aborder"></div>
 		</div>
-		<div className="row pt-lg-5 pt-md-5 pt-sm-2">
-			<div className="col-md-3 ">
+		<div className="row pt-lg-5 pt-md-5 pt-sm-3">
+			<div className="skill_margin col-md-3 col-sm-12">
 				<div className="card  border-0 shadow-lg">
 					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
 					<div className="card-body">
@@ -227,7 +171,7 @@ const Portfolio = () => {
 					</div>
 				</div>
 			</div>
-			<div className="col-md-3 ">
+			<div className="skill_margin col-md-3 col-sm-12">
 				<div className="card  border-0 shadow-lg">
 					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
 					<div className="card-body">
@@ -235,7 +179,7 @@ const Portfolio = () => {
 					</div>
 				</div>
 			</div>
-			<div className="col-md-3 ">
+			<div className="skill_margin col-md-3 col-sm-12">
 				<div className="card  border-0 shadow-lg">
 					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
 					<div className="card-body">
@@ -243,7 +187,7 @@ const Portfolio = () => {
 					</div>
 				</div>
 			</div>
-			<div className="col-md-3 ">
+			<div className="skill_margin col-md-3 col-sm-12">
 				<div className="card  border-0 shadow-lg">
 					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
 					<div className="card-body">
@@ -307,6 +251,31 @@ const Portfolio = () => {
 	</div>
 </div>
 </section>
+
+<section class="section-7 bg-light pt-5 pb-5" id="experience">
+<div class="container">
+	<div class="education-header">
+		<h1 class="text-center fw-bold">Experience</h1>
+	</div>
+	<div class="pborder">
+		<div class="aborder"></div>
+	</div>
+	<div class="card border-0 shadow-lg mt-5">
+		<div class="card-body p-5">
+			<div>
+				<i class="text-light fa-solid fa-briefcase rounded-circle bg-primary p-3"></i>
+			<span class="card-title ps-2">Web Development (Intern) | Essential-Infotech | April 2021 – Mid May 2021</span>
+			</div>
+			<ul>
+				<li><p class="card-text">Managed security issues of user during authorized/un-authorized log in.</p></li>
+				<li><p class="card-text">Performed daily task about creating some user interface on admin panel. </p></li>
+			</ul>
+		</div>
+		
+	</div>
+</div>
+</section>
+
 <section className="section-8 bg-light pt-5 pb-5" id="contact">
 <div className="container">
 	<div className="contact-header">

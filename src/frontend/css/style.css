@@ -26,7 +26,7 @@ nav .container .collapse ul li{
 
 
 /*Section1*/
-#slider1{
+#home1{
 	display: none;
 }
 .section1{
@@ -122,6 +122,7 @@ width: 25%;
 /*Section4*/
 .section4 .container{
 	background-color: #289BDE;
+	padding: 20px;
 }
 
 .section4 .container .modal-details a{
@@ -139,6 +140,15 @@ width: 25%;
 .section5 .container .elements h5{
 	font-size: 45px;
 }
+
+
+
+
+
+
+
+
+
 
 /*Section6*/
 .section-6 .container .card-body ul li{
@@ -263,7 +273,6 @@ footer {
 		margin-right: 10px;
 	}
 	/*Section1*/
-
 	
 	.section1:before{
 		top: 95px;
@@ -308,35 +317,43 @@ footer {
 }
 @media only screen and (max-width: 600px) {
 	/*navbar*/
-	#nav1{
+	#nav2{
 		display: block;
 	}
-	#nav,#nav2{
+	#nav,#nav1{
 		display: none;
 	}
 	#nav1 .container .navbar-brand{
 		font-size: 17px;
 	}
-	#nav1 .container .register{
-		margin-right: 5px;
-	}
+	
 	/*Section1*/
-	#slider1{
+	#home1{
 		display: block !important;
 	}
-	#slider{
+	#home{
 		display: none !important;
 	}
 	.section1{
 		width: 100% !important;
 		height: 100% !important;
 	}
+	#home1 img{
+		width: 100%!important;
+		height: 100%!important;
+	}
 	.section1:before{
 		display: none !important;
 	}
-	
+	.section1 .container .caption{
+	position: absolute;
+	top: 165px;
+	}
 	.section1 .container .caption h1{
-	font-size: 20px !important;
+	font-size: 21px !important;
+	}
+	.section1 .container .caption p span{
+		font-size: 25px;
 	}
 	/*Intro*/
 	.intro .container .card-heading h1{
@@ -393,9 +410,9 @@ footer {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 20PX!important;
-		margin: 15px!important;
-		width: 100%;
+		padding: 20px!important;
+		width: 100%!important;
+		margin: 0!important;
 	}
 	.section4 .container .modal-details{
 		display: flex;
@@ -408,6 +425,10 @@ footer {
 	}
 
 	/*Section5*/
+
+.section5 .container .row .skill_margin{
+	margin-top: 15px;
+}
 
 .section5 .container .row .col-md-4 .service-box {
   background-color: #fff;
