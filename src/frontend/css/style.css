@@ -30,12 +30,13 @@ nav .container .collapse ul li{
 	display: none;
 }
 .section1{
-  background-image: url(../images/bg.jpg);
- 
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 950px;
+}
+
+.section1 img{
+  width: 100%;
+  height: 900px;
 }
 
 .section1:before{
@@ -48,20 +49,20 @@ nav .container .collapse ul li{
   left:0;
   right:0;
   width: 100%;
-  height: 950px;
+  height: 949px;
   background:rgba(0,0,0,0.7);
 
 }
-.section1 .container .name-container .name{
+.section1 .container-fluid .name-container .name{
 	position: absolute;
 	top: 425px;
 }
 
 
-.section1 .container .name-container .name h1{
+.section1 .container-fluid .name-container .name h1{
 	font-size: 60px;
 }
-.section1 .container .name-container .name p{
+.section1 .container-fluid .name-container .name p{
 	font-size: 35px;
 }
 /*Intro*/
@@ -137,47 +138,6 @@ width: 25%;
 /*Section5*/
 .section5 .container .elements h5{
 	font-size: 45px;
-}
-
-
-
-
-.section5 .container .pgrs .progress #pgrs-95{
-	right: 52%;
-	margin-top: -44px;
-}
-.section5 .container .pgrs .progress #pgrs-80{
-	right: 16%;
-	margin-top: -44px;
-}
-.section5 .container .pgrs .progress #pgrs-85{
-	right: 56%;
-	margin-top: -44px;
-}
-.section5 .container .pgrs .progress #pgrs-40{
-	right: 32%;
-	margin-top: -44px;
-}.section5 .container .pgrs .progress #pgrs-60{
-	right: 66%;
-	margin-top: -44px;
-}
-.section5 .container .pgrs .progress #pgrs-75{
-	right: 18%;
-	margin-top: -44px;
-}
-.section5 .container .pgrs .progress #pgrs-30{
-	right: 77%;
-	margin-top: -44px;
-}
-
-.section5 .container .pgrs span{
-	position: absolute;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000000;
-
-
-
 }
 
 /*Section6*/
@@ -448,6 +408,42 @@ footer {
 	}
 
 	/*Section5*/
+
+.section5 .container .row .col-md-4 .service-box {
+  background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section5 .container .row .col-md-4 .service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.section5 .container .row .col-md-4 .service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.section5 .container .row .col-md-4 .service-box .ico-circle {
+  transition: all 500ms ease;
+  font-size: 4rem;
+}
+
+.section5 .container .row .col-md-4 .service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+.section5 .container .row .col-md-4 .service-box .s-description {
+  color: #4e4e4e;
+}
+
 	.section5 .container .elements h5{
 		font-size: 20px;
 	}
