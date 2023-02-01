@@ -1,6 +1,7 @@
 import React from 'react'
 import './Portfolio.css';
 import Project from '../../components/Project/Project';
+import Skill from '../../components/Skill/Skill';
 const projects = [
 {id:1, name:'Coding Hero', technologies:'HTML5, CSS3, Bootstrap 4', features:'Tried to make a copy of the Programming Hero’s Course landing page . Login and Registration page are also included.',
 img:'images/code.png',link:'https://marufahmedtushar.github.io/Coding_Hero-demo.github.io/index.html'},
@@ -10,13 +11,26 @@ img:'images/skokov.jpg',link:'https://marufahmedtushar.github.io/SKOKOV.github.i
 img:'images/abacus.jpg',link:'https://marufahmedtushar.github.io/convention-center/index.html'},
 {id:4, name:'Wise Learners', technologies:'HTML5, CSS3, Bootstrap 5', features:'This is a figma to html converted static site and also responsive.',
 img:'images/wise.png',link:'https://wise-learners.netlify.app/' },
-{id:4, name:'Wise Learners', technologies:'20s', features:'20-25',
-img:'',link:'' },
-{id:4, name:'Wise Learners', technologies:'20s', features:'20-25',
-img:'',link:'' },
-{id:4, name:'Wise Learners', technologies:'20s', features:'20-25',
-img:'',link:'' },
+{id:5, name:'Best Five', technologies:' HTML5, CSS3, Bootstrap 5, JavaScript', features:'This is a figma to html converted static site and also responsive.',
+img:'images/bestfive.png',link:'https://football-team-maker.netlify.app/' },
+{id:6, name:'Fast News', technologies:' HTML5, CSS3, Bootstrap 5, JavaScript, REST API', features:'This is a figma to html converted static site and also responsive.',
+img:'images/fastnews.png',link:'https://fast-news-blogsite.netlify.app/' },
+{id:7, name:'React-Quizers', technologies:'HTML5, CSS3, Bootstrap 5, React ,REST API', features:'This is a online quiz test site. User can test themselves by giving answer of some questions and user could see the correct answer if user want.If user clicks right/wrong answer the current page will notify him by showing toast.',
+img:'images/reactq.png',link:'https://fast-news-blogsite.netlify.app/' }
 ]
+
+
+const skills = [
+{id:1,name:'HTML',img:'images/html5.png'},
+{id:2,name:'CSS',img:'images/css3.png'},
+{id:3,name:'JavaScript',img:'images/js.png'},
+{id:4,name:'Bootstrap',img:'images/bootstrap.jpg'},
+{id:5,name:'Git',img:'images/bootstrap.jpg'},
+{id:6,name:'Netlify',img:'images/netlify.png'}
+
+] 
+
+
 
 const Portfolio = () => {
 	return (
@@ -163,38 +177,14 @@ const Portfolio = () => {
 			<div className="aborder"></div>
 		</div>
 		<div className="row pt-lg-5 pt-md-5 pt-sm-3">
-			<div className="skill_margin col-md-3 col-sm-12">
-				<div className="card  border-0 shadow-lg">
-					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
-					<div className="card-body">
-						<h5 className="card-title text-center">C</h5>
-					</div>
-				</div>
-			</div>
-			<div className="skill_margin col-md-3 col-sm-12">
-				<div className="card  border-0 shadow-lg">
-					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
-					<div className="card-body">
-						<h5 className="card-title text-center">C</h5>
-					</div>
-				</div>
-			</div>
-			<div className="skill_margin col-md-3 col-sm-12">
-				<div className="card  border-0 shadow-lg">
-					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
-					<div className="card-body">
-						<h5 className="card-title text-center">C</h5>
-					</div>
-				</div>
-			</div>
-			<div className="skill_margin col-md-3 col-sm-12">
-				<div className="card  border-0 shadow-lg">
-					<img src='images/c.png' className="card-img-top d-flex justify-content-center" alt="..." style={{height: "200px"}} />
-					<div className="card-body">
-						<h5 className="card-title text-center">C</h5>
-					</div>
-				</div>
-			</div>
+			{
+				skills.map(skill => <Skill
+				key={skill.id}
+				skill={skill}
+				
+				
+				></Skill>)
+			}
 		</div>
 	</div>
 </section>

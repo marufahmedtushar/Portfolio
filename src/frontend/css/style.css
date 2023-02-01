@@ -427,7 +427,7 @@ footer {
 	/*Section5*/
 
 .section5 .container .row .skill_margin{
-	margin-top: 15px;
+	margin-top: 15px!important;
 }
 
 .section5 .container .row .col-md-4 .service-box {

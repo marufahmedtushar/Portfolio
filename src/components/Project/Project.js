@@ -1,7 +1,8 @@
 import React from 'react'
 import './Project.css';
+import { Link } from 'react-router-dom';
 const Project = (props) => {
-	const {name, img, age_required, time, technologies,link} = props.project;
+	const {name, img,id,link} = props.project;
 
 	return (
 		
@@ -14,7 +15,8 @@ const Project = (props) => {
 		<div className="col-md-8">
 			<div className="card-body">
 				<h5 className="card-title fw-semibold text-capitalize">{name}</h5>
-				<p className="card-text"><small>Link : {link}</small></p>
+				<a className=" bg-primary text-light btn  w-100 rounded" href={link} target="_blank">Live</a>
+				
 			</div>
 		</div>
 	</div>
