@@ -73,6 +73,13 @@ border-radius: 5px;
 width: 8%;
 
 }
+
+.cborder{
+border: 2px solid #ffffff;
+border-radius: 5px;
+width: 6%;
+
+}
 .pborder{
 display: flex;
 justify-content: center;
@@ -104,8 +111,8 @@ background-color: #289BDE;
 
 .section3 .container .card .row .col-lg-8 .card-body .row .col-md-12 .btn{
 	background-color:  #289BDE;
+	width: 25%;
 }
-
 
 .bborder{
 border: 2px solid #289BDE;
@@ -247,6 +254,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-left: -28px;
 }
 
 .social ul li{

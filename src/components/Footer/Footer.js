@@ -9,13 +9,15 @@ const Footer = () => {
 		<div className="container p-5">
 			<div className="footer-element">
 				<div className="title">
-					<h3 className="fw-bold">Maruf Ahmed Tushar</h3>
+					<h3 className="fw-bold">A Passionate Front-End Developer</h3>
+
 				</div>
 				<div className="owner-details">
+				<p className="pb-2">Maruf Ahmed Tushar</p>
 					<p>Follow Me</p>
 				</div>
 				<div className="social d-flex justify-content-center">
-					<ul>
+					<ul className="sociallist">
 						<li>
 							<a href="https://www.facebook.com/marufahmedtushar471/">
 								<i className="fa-brands fa-facebook-f"></i>
@@ -40,8 +42,17 @@ const Footer = () => {
 					</ul>
 				</div>
 			</div>
+			<div className="pborder mt-2">
+				<div className="cborder"></div>
+			</div>
 		</div>
+		
 	</footer>
+
+
+	<div className=" text-center text-light" style={{backgroundColor: '#000000',padding: '10px'}}>
+			<p>Maruf Ahmed Tushar © 2023</p>
+		</div>
 </div>
 	)
 }

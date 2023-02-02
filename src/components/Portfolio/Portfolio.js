@@ -28,9 +28,10 @@ const skills = [
 {id:2,name:'CSS',img:'images/css3.png'},
 {id:3,name:'JavaScript',img:'images/js.png'},
 {id:4,name:'Bootstrap',img:'images/bootstrap.jpg'},
-{id:5,name:'GitHub',img:'images/git.png'},
-{id:6,name:'Netlify',img:'images/netlify.png'},
-{id:7,name:'React Js',img:'images/react.png'}
+{id:5,name:'TailwindCSS ',img:'images/tailwind.png'},
+{id:6,name:'GitHub',img:'images/git.png'},
+{id:7,name:'Netlify',img:'images/netlify.png'},
+{id:8,name:'React Js',img:'images/react.png'}
 
 ] 
 
@@ -130,7 +131,7 @@ const Portfolio = () => {
 
 							<div className="row">
 								<div className="col-md-12">
-									<div className="resume d-grid gap-2 ">
+									<div className="resume d-flex align-items-center justify-content-center ">
 										<a href={Resume} className="btn text-light  mt-4" target = "_blank">Resume</a>
 									</div>
 								</div>
@@ -227,7 +228,9 @@ const Portfolio = () => {
 				
 			</div>
 			
-			<div className="card border-0 shadow-lg mt-5">
+			<div className="row">
+				<div className="col-md-6">
+					<div className="card border-0 shadow-lg mt-5">
 				<div className="card-body p-5">
 					<div>
 						<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
@@ -241,7 +244,10 @@ const Portfolio = () => {
 				</div>
 				
 			</div>
-			<div className="card border-0 shadow-lg mt-5">
+			
+				</div>
+				<div className="col-md-6">
+				<div className="card border-0 shadow-lg mt-5">
 				<div className="card-body p-5">
 					<div>
 						<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
@@ -254,6 +260,8 @@ const Portfolio = () => {
 					</ul>
 				</div>
 				
+			</div>
+			</div>
 			</div>
 		</div>
 	</section>

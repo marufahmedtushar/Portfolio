@@ -41,7 +41,7 @@ const Header = () => {
 			
 		</div>
 	</nav>
-	<nav className="navbar navbar-expand-lg bg-light p-4 shadow" id="nav1">
+	<nav className="navbar navbar-expand-lg fixed-top bg-light p-4 shadow" id="nav1">
 		<div className="container">
 			<a className="navbar-brand fw-bold" href="#">Maruf Ahmed Tushar</a>
 			<div className="d-flex justify-content-between">
