@@ -2,6 +2,9 @@ import React from 'react'
 import './Portfolio.css';
 import Project from '../../components/Project/Project';
 import Skill from '../../components/Skill/Skill';
+import Resume from '../../components/Document/Maruf_Ahmed_Tushar.pdf';
+import '../../frontend/css/style.css';
+import Typical from 'react-typical'
 const projects = [
 {id:1, name:'Coding Hero', technologies:'HTML5, CSS3, Bootstrap 4', features:'Tried to make a copy of the Programming Hero’s Course landing page . Login and Registration page are also included.',
 img:'images/code.png',link:'https://marufahmedtushar.github.io/Coding_Hero-demo.github.io/index.html'},
@@ -25,10 +28,14 @@ const skills = [
 {id:2,name:'CSS',img:'images/css3.png'},
 {id:3,name:'JavaScript',img:'images/js.png'},
 {id:4,name:'Bootstrap',img:'images/bootstrap.jpg'},
-{id:5,name:'Git',img:'images/bootstrap.jpg'},
-{id:6,name:'Netlify',img:'images/netlify.png'}
+{id:5,name:'GitHub',img:'images/git.png'},
+{id:6,name:'Netlify',img:'images/netlify.png'},
+{id:7,name:'React Js',img:'images/react.png'}
 
 ] 
+
+
+
 
 
 
@@ -44,11 +51,12 @@ const Portfolio = () => {
 					<h1 className="text-light fw-bold">Hi,</h1>
 					<h1 className="text-light fw-bold">I am Md. Maruf Ahmed Tushar</h1>
 					
-					<p>
-						<span
-							className="txt-rotate"
-							data-period="2000"
-						data-rotate='[ "CSE Graduate.","Front-End Developer.", "Web Developer." ]'></span>
+					<p className="text-light">
+						<Typical
+						steps={['CSE Graduate.', 1500, 'Front-End Developer.', 1500, 'Web Developer.', 1500]}
+						loop={Infinity}
+						wrapper="b"
+						/>
 					</p>
 				</div>
 			</div>
@@ -61,12 +69,13 @@ const Portfolio = () => {
 			<div className="caption d-flex justify-content-center align-items-center flex-column p-3">
 				<h1 className="text-light fw-bold">Hi,</h1>
 				<h1 className="text-light fw-bold">I am Md. Maruf Ahmed Tushar</h1>
-				<p>
-					<span
-						className="txt-rotate"
-						data-period="3000"
-					data-rotate='[ "CSE Graduate.", "Front-End Developer.", "Web Developer." ]'></span>
-				</p>
+				<p className="text-light">
+						<Typical
+						steps={['CSE Graduate.', 1500, 'Front-End Developer.', 1500, 'Web Developer.', 1500]}
+						loop={Infinity}
+						wrapper="b"
+						/>
+					</p>
 			</div>
 		</div>
 	</section>
@@ -115,6 +124,15 @@ const Portfolio = () => {
 									<p className="fw-bold"> Bangladesh Army University of Science and Technology (BAUST)</p>
 									<p className="fw-bold">Saidpur Cantonment, Saidpur, Nilphamari</p>
 									<p className="fw-bold">Bangladesh</p>
+									
+								</div>
+							</div>
+
+							<div className="row">
+								<div className="col-md-12">
+									<div className="resume d-grid gap-2 ">
+										<a href={Resume} className="btn text-light  mt-4" target = "_blank">Resume</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -135,204 +153,197 @@ const Portfolio = () => {
 			<div className="courses mt-4">
 				<div className="row">
 					
-
-							{
-				projects.map(project => <Project
-				key={project.id}
-				project={project}
-				
-				
-				></Project>)
-				}
-				
+					{
+					projects.map(project => <Project
+						key={project.id}
+						project={project}
+						
+						
+					></Project>)
+					}
+					
 					
 					
 				</div>
+				
+			</div>
 			
 		</div>
-		
-	</div>
-</section>
-{/*Section-4*/}
-<section className="section4 bg-light pt-5 pb-5">
-<div className="container rounded-3 p-5 d-flex justify-content-between">
-	<div className="modal-details">
-		<h3 className="text-light">Hire Me !!</h3>
-		<p className="text-light">If you want to hire me <br/> contact me now.</p>
-	</div>
-	<div className="modal-details d-flex justify-content-center align-items-center">
-		<a href="#contact" className="btn btn-light ">Contact Now</a>
-	</div>
-</div>
-
-
-</section>
-{/*Section5*/}
-<section className="section5 bg-light pt-5 pb-5" id="skills">
-	<div className="container">
-		<div className="elements d-flex justify-content-center">
-			<h5 className=" fw-bold">Skills</h5>
+	</section>
+	{/*Section-4*/}
+	<section className="section4 bg-light pt-5 pb-5">
+		<div className="container rounded-3 p-5 d-flex justify-content-between">
+			<div className="modal-details">
+				<h3 className="text-light">Hire Me !!</h3>
+				<p className="text-light">If you want to hire me <br/> contact me now.</p>
+			</div>
+			
+			<div className="modal-details d-flex justify-content-center align-items-center">
+				<a href="#contact" className="btn btn-light ">Contact Now</a>
+			</div>
 		</div>
-		<div className="pborder">
-			<div className="aborder"></div>
-		</div>
-		<div className="row pt-lg-5 pt-md-5 pt-sm-3">
-			{
+	</section>
+	{/*Section5*/}
+	<section className="section5 bg-light pt-5 pb-5" id="skills">
+		<div className="container">
+			<div className="elements d-flex justify-content-center">
+				<h5 className=" fw-bold">Skills</h5>
+			</div>
+			<div className="pborder">
+				<div className="aborder"></div>
+			</div>
+			<div className="row pt-lg-5 pt-md-5 pt-sm-3">
+				{
 				skills.map(skill => <Skill
 				key={skill.id}
 				skill={skill}
 				
 				
 				></Skill>)
-			}
-		</div>
-	</div>
-</section>
-{/*Section6*/}
-<section className="section-6 bg-light pt-5 pb-5" id="education">
-<div className="container">
-	<div className="education-header">
-		<h1 className="text-center fw-bold">Education</h1>
-	</div>
-	<div className="pborder">
-		<div className="aborder"></div>
-	</div>
-	<div className="card border-0 shadow-lg mt-5">
-		<div className="card-body p-5">
-			<div>
-				<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
-			<span className="card-title ps-2 text-justify">B.Sc. Eng. in Computer Science and Engineering</span>
+				}
 			</div>
-			<ul>
-				<li><p className="card-text">Dept. of CSE, Bangladesh Army University of Science and Technology (BAUST)</p></li>
-				<li><p className="card-text">Saidpur,Nilphamari, Bangladesh)</p></li>
-			</ul>
 		</div>
-		
-	</div>
-	
-	<div className="card border-0 shadow-lg mt-5">
-		<div className="card-body p-5">
-			<div>
-				<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
-			<span className="card-title ps-2">HSC</span>
+	</section>
+	{/*Section6*/}
+	<section className="section-6 bg-light pt-5 pb-5" id="education">
+		<div className="container">
+			<div className="education-header">
+				<h1 className="text-center fw-bold">Education</h1>
 			</div>
-			<ul>
-				<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
-				<li><p className="card-text">Jessore Board</p></li>
-				<li><p className="card-text">Khulna, Bangladesh</p></li>
-			</ul>
-		</div>
-		
-	</div>
-	<div className="card border-0 shadow-lg mt-5">
-		<div className="card-body p-5">
-			<div>
-				<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
-			<span className="card-title ps-2">SSC</span>
+			<div className="pborder">
+				<div className="aborder"></div>
 			</div>
-			<ul>
-				<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
-				<li><p className="card-text">Jessore Board</p></li>
-				<li><p className="card-text">Khulna, Bangladesh</p></li>
-			</ul>
-		</div>
-		
-	</div>
-</div>
-</section>
-
-<section class="section-7 bg-light pt-5 pb-5" id="experience">
-<div class="container">
-	<div class="education-header">
-		<h1 class="text-center fw-bold">Experience</h1>
-	</div>
-	<div class="pborder">
-		<div class="aborder"></div>
-	</div>
-	<div class="card border-0 shadow-lg mt-5">
-		<div class="card-body p-5">
-			<div>
-				<i class="text-light fa-solid fa-briefcase rounded-circle bg-primary p-3"></i>
-			<span class="card-title ps-2">Web Development (Intern) | Essential-Infotech | April 2021 – Mid May 2021</span>
+			<div className="card border-0 shadow-lg mt-5">
+				<div className="card-body p-5">
+					<div>
+						<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
+						<span className="card-title ps-2 text-justify">B.Sc. Eng. in Computer Science and Engineering</span>
+					</div>
+					<ul>
+						<li><p className="card-text">Dept. of CSE, Bangladesh Army University of Science and Technology (BAUST)</p></li>
+						<li><p className="card-text">Saidpur,Nilphamari, Bangladesh)</p></li>
+					</ul>
+				</div>
+				
 			</div>
-			<ul>
-				<li><p class="card-text">Managed security issues of user during authorized/un-authorized log in.</p></li>
-				<li><p class="card-text">Performed daily task about creating some user interface on admin panel. </p></li>
-			</ul>
+			
+			<div className="card border-0 shadow-lg mt-5">
+				<div className="card-body p-5">
+					<div>
+						<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
+						<span className="card-title ps-2">HSC</span>
+					</div>
+					<ul>
+						<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
+						<li><p className="card-text">Jessore Board</p></li>
+						<li><p className="card-text">Khulna, Bangladesh</p></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div className="card border-0 shadow-lg mt-5">
+				<div className="card-body p-5">
+					<div>
+						<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
+						<span className="card-title ps-2">SSC</span>
+					</div>
+					<ul>
+						<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
+						<li><p className="card-text">Jessore Board</p></li>
+						<li><p className="card-text">Khulna, Bangladesh</p></li>
+					</ul>
+				</div>
+				
+			</div>
 		</div>
-		
-	</div>
-</div>
-</section>
-
-<section className="section-8 bg-light pt-5 pb-5" id="contact">
-<div className="container">
-	<div className="contact-header">
-		<h1 className="text-center fw-bold">Contact</h1>
-	</div>
-	<div className="pborder">
-		<div className="aborder"></div>
-	</div>
-	<div className="contact-form  pt-3">
-		<div className="row">
-			<div className="col-lg-8 col-md-8 col-sm-12 g-0">
-				<div className="card border-0 p-5 shadow-lg rounded-start mt-4" style= {{height:'380px'}} >
-					<form className="row g-3">
-						<div className="col-md-6">
-							<input type="text" className="form-control rounded-0" placeholder="Name"/>
+	</section>
+	<section class="section-7 bg-light pt-5 pb-5" id="experience">
+		<div class="container">
+			<div class="education-header">
+				<h1 class="text-center fw-bold">Experience</h1>
+			</div>
+			<div class="pborder">
+				<div class="aborder"></div>
+			</div>
+			<div class="card border-0 shadow-lg mt-5">
+				<div class="card-body p-5">
+					<div>
+						<i class="text-light fa-solid fa-briefcase rounded-circle bg-primary p-3"></i>
+						<span class="card-title ps-2">Web Development (Intern) | Essential-Infotech | April 2021 – Mid May 2021</span>
+					</div>
+					<ul>
+						<li><p class="card-text">Managed security issues of user during authorized/un-authorized log in.</p></li>
+						<li><p class="card-text">Performed daily task about creating some user interface on admin panel. </p></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section className="section-8 bg-light pt-5 pb-5" id="contact">
+		<div className="container">
+			<div className="contact-header">
+				<h1 className="text-center fw-bold">Contact</h1>
+			</div>
+			<div className="pborder">
+				<div className="aborder"></div>
+			</div>
+			<div className="contact-form  pt-3">
+				<div className="row">
+					<div className="col-lg-8 col-md-8 col-sm-12 g-0">
+						<div className="card-height card border-0 p-5 shadow-lg rounded-start mt-4" >
+							<form className="row g-3">
+								<div className="col-md-6">
+									<input type="text" className="form-control rounded-0" placeholder="Name"/>
+								</div>
+								<div className="col-md-6">
+									<input type="email" className="form-control rounded-0"  placeholder="Email"/>
+								</div>
+								<div className="col-md-12">
+									<input type="text" className="form-control rounded-0"  placeholder="Subject"/>
+								</div>
+								<div className="col-md-12">
+									<textarea className="form-control rounded-0"  rows="6" placeholder="Message"></textarea>
+								</div>
+								
+								<div className="col-md-12">
+									<button type="submit" className="btn text-light py-2 px-4" style= {{backgroundColor: '#289BDE'}}>Submit</button>
+								</div>
+							</form>
 						</div>
-						<div className="col-md-6">
-							<input type="email" className="form-control rounded-0"  placeholder="Email"/>
+					</div>
+					<div className="col-lg-4 col-md-4 col-sm-12 g-0" >
+						<div className="card border-0 p-4" style={{ height:'425px', backgroundColor: '#289BDE'}}>
+							<div className="dbox w-100 d-flex align-items-start">
+								<div className="icon d-flex align-items-center justify-content-center">
+									<span className="fa fa-map-marker"></span>
+								</div>
+								<div className="">
+									<p className="mt-3"> Shalgrampur, Shakhipur, Tangail,Bangladesh</p>
+								</div>
+							</div>
+							<div className="dbox w-100 d-flex align-items-start">
+								<div className="icon d-flex align-items-center justify-content-center">
+									<span className="fa fa-phone"></span>
+								</div>
+								<div className="">
+									<p className="mt-3">+8801306092416,+8801931989411</p>
+								</div>
+							</div>
+							<div className="dbox w-100 d-flex align-items-start">
+								<div className="icon d-flex align-items-center justify-content-center">
+									<span className="fa fa-paper-plane"></span>
+								</div>
+								<div className="">
+									<p className="mt-3">ahmedmaruf.baust@gmail.com</p>
+								</div>
+							</div>
 						</div>
-						<div className="col-md-12">
-							<input type="text" className="form-control rounded-0"  placeholder="Subject"/>
-						</div>
-						<div className="col-md-12">
-							<textarea className="form-control rounded-0"  rows="6" placeholder="Message"></textarea>
-						</div>
-						
-						<div className="col-12">
-							<button type="submit" className="btn text-light py-2 px-4" style= {{backgroundColor: '#289BDE'}}>Sign in</button>
-						</div>
-					</form>
+					</div>
 				</div>
 			</div>
-			<div className="col-lg-4 col-md-4 col-sm-12 g-0" >
-				<div className="card border-0 p-4" style={{ height:'425px', backgroundColor: '#289BDE'}}>
-					<div className="dbox w-100 d-flex align-items-start">
-						<div className="icon d-flex align-items-center justify-content-center">
-							<span className="fa fa-map-marker"></span>
-						</div>
-						<div className="">
-							<p className="mt-3"><span>Address:</span> Shalgrampur, Shakhipur, Tangail,Bangladesh</p>
-						</div>
-					</div>
-					<div className="dbox w-100 d-flex align-items-start">
-						<div className="icon d-flex align-items-center justify-content-center">
-							<span className="fa fa-phone"></span>
-						</div>
-						<div className="">
-							<p className="mt-3"><span>Phone:</span>+8801306092416,+8801931989411</p>
-						</div>
-					</div>
-					<div className="dbox w-100 d-flex align-items-start">
-						<div className="icon d-flex align-items-center justify-content-center">
-							<span className="fa fa-paper-plane"></span>
-						</div>
-						<div className="">
-							<p className="mt-3"><span>Email:</span>ahmedmaruf.baust@gmail.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
-	</div>
-</div>
-</section>
-
-
-
+	</section>
 </div>
 	)
 }

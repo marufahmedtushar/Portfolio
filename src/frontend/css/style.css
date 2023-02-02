@@ -84,13 +84,10 @@ align-items: center;
 }
 
 /*Section2*/
-.section2 .container .courses .col-md-8 small{
-	color: #289BDE;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    max-width: 90%;
+
+
+.section2 .container .courses .col-md-8 .card-body .livelink-bg{
+background-color: #289BDE;
 }
 
 .section2 .container .more-btn a{
@@ -99,18 +96,17 @@ align-items: center;
 
 /*Section3*/
 
-/*.section3 .container .card .row .col-md-8{
-	background-color: #F4FAFD;
-}*/
+
 
 .section3 .container .card .row .col-lg-8 .card-body h5{
 	font-size: 45px;
 }
 
-.section3 .container .card .row .col-lg-8 .card-body .read-more a:hover{
-	background-color: #289BDE;
-	color: #ffffff;
+.section3 .container .card .row .col-lg-8 .card-body .row .col-md-12 .btn{
+	background-color:  #289BDE;
 }
+
+
 .bborder{
 border: 2px solid #289BDE;
 border-radius: 5px;
@@ -205,6 +201,10 @@ width: 25%;
     color: rgba(255,255,255,.8);
     margin-bottom: 25px;
 }
+
+.section-8 .container .row .card-height{
+	height: 380px;
+}
 .section-8 .container .dbox .icon{
 	width: 30px;
     height: 30px;
@@ -212,6 +212,8 @@ width: 25%;
     background: rgba(255,255,255,.1);
     margin: 10px;
 }
+
+
 /*footer*/
 
 
@@ -317,10 +319,10 @@ footer {
 }
 @media only screen and (max-width: 600px) {
 	/*navbar*/
-	#nav2{
+	#nav1{
 		display: block;
 	}
-	#nav,#nav1{
+	#nav,#nav2{
 		display: none;
 	}
 	#nav1 .container .navbar-brand{
@@ -345,14 +347,14 @@ footer {
 	.section1:before{
 		display: none !important;
 	}
-	.section1 .container .caption{
+	#home1 .container .caption{
 	position: absolute;
 	top: 165px;
 	}
-	.section1 .container .caption h1{
+	#home1 .container .caption h1{
 	font-size: 21px !important;
 	}
-	.section1 .container .caption p span{
+	#home1 .container .caption p{
 		font-size: 25px;
 	}
 	/*Intro*/
@@ -420,6 +422,9 @@ footer {
 		justify-content: center;
 		align-items: center;
 	}
+	.section4 .container .resume{
+		margin-bottom: 15px;
+	}
 	.section4 .container .modal-details P{
 		text-align: center;
 	}
@@ -469,32 +474,7 @@ footer {
 		font-size: 20px;
 	}
 
-	.section5 .container .pgrs .progress #pgrs-95{
-		right: 7%;
-	}
-	.section5 .container .pgrs .progress #pgrs-80{
-		right: 17%;
-	}
-	.section5 .container .pgrs .progress #pgrs-85{
-		right: 15%;
-	}
-	.section5 .container .pgrs .progress #pgrs-40{
-		right: 52%;
-	}
-	.section5 .container .pgrs .progress #pgrs-60{
-		right: 36%;
-	}
-
-	.section5 .container .pgrs .progress #pgrs-75{
-		right: 22%;
-	}
-
-	.section5 .container .pgrs .progress #pgrs-30{
-		right: 55%;
-	}
-
 	
-
 	
 
 	/*Section6*/
@@ -532,6 +512,12 @@ footer {
 		text-align: center;
 		margin-top: 10px;
 	}
+
+
+/*Section8*/
+	.section-8 .container .row .card-height{
+	height: 440px!important;
+}
 
 	/*footer*/
 
