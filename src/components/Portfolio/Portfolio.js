@@ -132,7 +132,7 @@ const Portfolio = () => {
 							<div className="row">
 								<div className="col-md-12">
 									<div className="resume d-flex align-items-center justify-content-center ">
-										<a href={Resume} className="btn text-light  mt-4" target = "_blank">Resume</a>
+										<a href={Resume} className="btn  mt-4" target = "_blank">Resume</a>
 									</div>
 								</div>
 							</div>
@@ -315,7 +315,7 @@ const Portfolio = () => {
 								</div>
 								
 								<div className="col-md-12">
-									<button type="submit" className="btn text-light py-2 px-4" style= {{backgroundColor: '#289BDE'}}>Submit</button>
+									<button type="submit" className="submit btn  py-2 px-4">Submit</button>
 								</div>
 							</form>
 						</div>
@@ -327,7 +327,7 @@ const Portfolio = () => {
 									<span className="fa fa-map-marker"></span>
 								</div>
 								<div className="">
-									<p className="mt-3"> Shalgrampur, Shakhipur, Tangail,Bangladesh</p>
+									<p className="mt-3 fw-bold"> Shalgrampur, Shakhipur, Tangail,Bangladesh</p>
 								</div>
 							</div>
 							<div className="dbox w-100 d-flex align-items-start">
@@ -335,7 +335,7 @@ const Portfolio = () => {
 									<span className="fa fa-phone"></span>
 								</div>
 								<div className="">
-									<p className="mt-3">+8801306092416,+8801931989411</p>
+									<p className="mt-3 fw-bold">+8801306092416,+8801931989411</p>
 								</div>
 							</div>
 							<div className="dbox w-100 d-flex align-items-start">
@@ -343,7 +343,7 @@ const Portfolio = () => {
 									<span className="fa fa-paper-plane"></span>
 								</div>
 								<div className="">
-									<p className="mt-3">ahmedmaruf.baust@gmail.com</p>
+									<p className="mt-3 fw-bold">ahmedmaruf.baust@gmail.com</p>
 								</div>
 							</div>
 						</div>

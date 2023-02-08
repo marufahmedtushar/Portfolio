@@ -112,6 +112,14 @@ background-color: #289BDE;
 .section3 .container .card .row .col-lg-8 .card-body .row .col-md-12 .btn{
 	background-color:  #289BDE;
 	width: 25%;
+	border-radius: 30px;
+	padding: 10px;
+	color: #ffffff;
+}
+.section3 .container .card .row .col-lg-8 .card-body .row .col-md-12 .btn:hover{
+	background-color:#ffffff;
+	color: #289BDE;
+	border: 2px solid #289BDE;
 }
 
 .bborder{
@@ -130,6 +138,12 @@ width: 25%;
 
 .section4 .container .modal-details a{
 	color: #289BDE;
+	border-radius: 30px;
+}
+.section4 .container .modal-details a:hover{
+	font-weight: bold;
+	background-color: ;
+	border: 2px solid #289BDE;
 }
 .section4 .modal .modal-header{
 	background-color: #289BDE;
@@ -212,6 +226,19 @@ width: 25%;
 .section-8 .container .row .card-height{
 	height: 380px;
 }
+
+.section-8 .container .contact-form .row .col-lg-8 .card-height .submit{
+	background-color: #289BDE;
+	border-radius: 30px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.section-8 .container .contact-form .row .col-lg-8 .card-height .submit:hover{
+	background-color:#ffffff;
+	color: #289BDE;
+	border: 2px solid #289BDE;
+}
 .section-8 .container .dbox .icon{
 	width: 30px;
     height: 30px;
@@ -246,8 +273,12 @@ footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-  
     border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+.social i:hover{
+	background: #289BDE;
 }
 
 .social ul{
@@ -264,7 +295,6 @@ footer {
 	text-decoration: none;
 	padding: 5px;
 	color: white;
-
 }
 
 
