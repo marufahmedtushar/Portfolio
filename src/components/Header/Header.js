@@ -1,15 +1,20 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import './Header.css';
 
 
 const Header = () => {
+
+
+const [showMediaIcon,setShowMediaIcon] = useState(false);
+
+
 	return (
 <div>
 	<nav className="navbar navbar-expand-lg bg-light fixed-top p-2 shadow" id="nav">
 		<div className="container">
 			<a className="navbar-brand fw-bold" href="">Maruf Ahmed Tushar</a>
 			<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span className="navbar-toggler-icon"></span>
+			<span className="navbar-toggler-icon" ></span>
 			</button>
 			<div className="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul className="navbar-nav  mb-2 mb-lg-0">
@@ -41,19 +46,18 @@ const Header = () => {
 			
 		</div>
 	</nav>
-	<nav className="navbar navbar-expand-lg fixed-top bg-light p-4 shadow" id="nav1">
+	
+		<nav className="navbar navbar-expand-md fixed-top bg-light p-4 shadow" id="nav1">
 		<div className="container">
-			<a className="navbar-brand fw-bold" href="#">Maruf Ahmed Tushar</a>
-			<div className="d-flex justify-content-between">
-				
-				<button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span className="navbar-toggler-icon"></span>
+			<a className="navbar-brand fw-bold" href="#home">Maruf Ahmed Tushar</a>
+			<button  className="navbar-toggler" type="button" aria-label="Toggle navigation">
+				<span className="navbar-toggler-icon" onClick ={() => setShowMediaIcon (!showMediaIcon)}></span>
 				</button>
-			</div>
-			<div className="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul className="navbar-nav  mb-2 mb-lg-0">
+			
+			<div >
+				<ul className={showMediaIcon ? "navbar-nav" :  "collapse navbar-collapse"} >
 					<li className="nav-item">
-						<a className="nav-link active" aria-current="page" href="#home">Home</a>
+						<a className="nav-link active" aria-current="page" href="#">Home</a>
 					</li>
 					<li className="nav-item">
 						<a className="nav-link" href="#about">About</a>
@@ -80,6 +84,7 @@ const Header = () => {
 			
 		</div>
 	</nav>
+	
 	<nav className="navbar navbar-expand-lg bg-light p-4 shadow" id="nav2">
 		<div className="container">
 			<a className="navbar-brand fw-bold" href="#">Maruf Ahmed Tushar</a>

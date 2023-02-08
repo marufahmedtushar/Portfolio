@@ -4,7 +4,7 @@ import Project from '../../components/Project/Project';
 import Skill from '../../components/Skill/Skill';
 import Resume from '../../components/Document/Maruf_Ahmed_Tushar.pdf';
 import '../../frontend/css/style.css';
-import Typical from 'react-typical'
+import Typical from 'react-typical';
 const projects = [
 {id:1, name:'Coding Hero', technologies:'HTML5, CSS3, Bootstrap 4', features:'Tried to make a copy of the Programming Hero’s Course landing page . Login and Registration page are also included.',
 img:'images/code.png',link:'https://marufahmedtushar.github.io/Coding_Hero-demo.github.io/index.html'},

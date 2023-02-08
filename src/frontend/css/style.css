@@ -352,6 +352,9 @@ footer {
 		width: 100%!important;
 		height: 100%!important;
 	}
+	#home1 .container{
+		margin-top: 90px;
+	}
 	.section1:before{
 		display: none !important;
 	}
@@ -404,13 +407,10 @@ footer {
 		font-size: 25px;
 		font-weight: bold;
 	}
-	.section3 .container .card .row .col-lg-8 .card-body .ellipsis{
-		
-  		white-space: normal; 
-  		height: 90px;
-		overflow: hidden;
-		text-overflow: ellipsis;
+	.section3 .container .card .row .col-lg-8 .card-body .row .col-md-12 .btn {
+		width: 32%;
 	}
+	
 
 	/*Section4*/
 	.section4{
