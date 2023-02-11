@@ -77,7 +77,7 @@ width: 8%;
 .cborder{
 border: 2px solid #ffffff;
 border-radius: 5px;
-width: 6%;
+width: 20%;
 
 }
 .pborder{
@@ -216,6 +216,28 @@ width: 25%;
 }
 
 
+/*Section FAQ*/
+.section-faq .container-fluid{
+	background-image:url("/public/images/bg2.png");
+	background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: 100%!important;
+}
+.section-faq .container-fluid .faq-container .col-md-4{
+margin-top:220px ;
+}
+.section-faq .container-fluid .faq-container .col-md-4 .accordion-item,.section-faq .container-fluid .faq-container .col-md-4 .accordion-item .accordion-button{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.section-faq .container-fluid .faq-container .col-md-4 .accordion-item button:focus{
+	outline: 0;
+	box-shadow: none !important;
+	border: 1px solid #ffffff;
+}
+
 /*Section8*/
 
 .section-8 .container .dbox {
@@ -253,10 +275,12 @@ width: 25%;
 
 
 footer {
-    background-color: #161616;
     padding: 50px 0;
     display: flex;
 	justify-content: center;
+	background-image:url("/public/images/bg3.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title h3 , .owner-details p{
@@ -551,7 +575,21 @@ footer {
 		margin-top: 10px;
 	}
 
+/*Section FAQ*/
+.section-faq .container-fluid .faq-container .col-md-4{
+margin-top:325px ;
+}
+.section-faq .container-fluid .faq-container .col-md-4 .accordion-item,.section-faq .container-fluid .faq-container .col-md-4 .accordion-item .accordion-button{
+	opacity: 0.8;
+	border: 0!important;
+}
+.section-faq .container-fluid .faq-container .col-md-4 .accordion-item .accordion-header:focus{
 
+	border: 0!important
+}
+.section-faq .container-fluid .faq-container .col-md-4 .accordion-item button:focus{
+	border: 0!important
+}
 /*Section8*/
 	.section-8 .container .row .card-height{
 	height: 440px!important;

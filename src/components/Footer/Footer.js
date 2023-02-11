@@ -7,6 +7,7 @@ const Footer = () => {
 <div>
 	<footer>
 		<div className="container p-5">
+
 			<div className="footer-element">
 				<div className="title">
 					<h3 className="fw-bold">A Passionate Front-End Developer</h3>

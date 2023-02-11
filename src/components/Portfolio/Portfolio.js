@@ -19,10 +19,8 @@ img:'images/bestfive.png',link:'https://football-team-maker.netlify.app/' },
 {id:6, name:'Fast News', technologies:' HTML5, CSS3, Bootstrap 5, JavaScript, REST API', features:'This is a figma to html converted static site and also responsive.',
 img:'images/fastnews.png',link:'https://fast-news-blogsite.netlify.app/' },
 {id:7, name:'React-Quizers', technologies:'HTML5, CSS3, Bootstrap 5, React ,REST API', features:'This is a online quiz test site. User can test themselves by giving answer of some questions and user could see the correct answer if user want.If user clicks right/wrong answer the current page will notify him by showing toast.',
-img:'images/reactq.png',link:'https://fast-news-blogsite.netlify.app/' }
+img:'images/reactq.png',link:'https://react-quizers.netlify.app/' }
 ]
-
-
 const skills = [
 {id:1,name:'HTML',img:'images/html5.png'},
 {id:2,name:'CSS',img:'images/css3.png'},
@@ -32,16 +30,9 @@ const skills = [
 {id:6,name:'GitHub',img:'images/git.png'},
 {id:7,name:'Netlify',img:'images/netlify.png'},
 {id:8,name:'React Js',img:'images/react.png'}
-
-] 
-
-
-
-
-
-
+]
 const Portfolio = () => {
-	return (
+return (
 <div>
 	{/*Section-1*/}
 	<section className="section1 bg-light pb-5 pt-5" id="home">
@@ -71,12 +62,12 @@ const Portfolio = () => {
 				<h1 className="text-light fw-bold">Hi,</h1>
 				<h1 className="text-light fw-bold">I am Md. Maruf Ahmed Tushar</h1>
 				<p className="text-light">
-						<Typical
-						steps={['CSE Graduate.', 1500, 'Front-End Developer.', 1500, 'Web Developer.', 1500]}
-						loop={Infinity}
-						wrapper="b"
-						/>
-					</p>
+					<Typical
+					steps={['CSE Graduate.', 1500, 'Front-End Developer.', 1500, 'Web Developer.', 1500]}
+					loop={Infinity}
+					wrapper="b"
+					/>
+				</p>
 			</div>
 		</div>
 	</section>
@@ -128,7 +119,6 @@ const Portfolio = () => {
 									
 								</div>
 							</div>
-
 							<div className="row">
 								<div className="col-md-12">
 									<div className="resume d-flex align-items-center justify-content-center ">
@@ -231,37 +221,37 @@ const Portfolio = () => {
 			<div className="row">
 				<div className="col-md-6">
 					<div className="card border-0 shadow-lg mt-5">
-				<div className="card-body p-5">
-					<div>
-						<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
-						<span className="card-title ps-2">HSC</span>
+						<div className="card-body p-5">
+							<div>
+								<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
+								<span className="card-title ps-2">HSC</span>
+							</div>
+							<ul>
+								<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
+								<li><p className="card-text">Jessore Board</p></li>
+								<li><p className="card-text">Khulna, Bangladesh</p></li>
+							</ul>
+						</div>
+						
 					</div>
-					<ul>
-						<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
-						<li><p className="card-text">Jessore Board</p></li>
-						<li><p className="card-text">Khulna, Bangladesh</p></li>
-					</ul>
-				</div>
-				
-			</div>
-			
+					
 				</div>
 				<div className="col-md-6">
-				<div className="card border-0 shadow-lg mt-5">
-				<div className="card-body p-5">
-					<div>
-						<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
-						<span className="card-title ps-2">SSC</span>
+					<div className="card border-0 shadow-lg mt-5">
+						<div className="card-body p-5">
+							<div>
+								<i className="text-light fa-solid fa-graduation-cap rounded-circle bg-primary p-3"></i>
+								<span className="card-title ps-2">SSC</span>
+							</div>
+							<ul>
+								<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
+								<li><p className="card-text">Jessore Board</p></li>
+								<li><p className="card-text">Khulna, Bangladesh</p></li>
+							</ul>
+						</div>
+						
 					</div>
-					<ul>
-						<li><p className="card-text">Cantonment Public School & College ,Jahanabad Cantonment,Khulna</p></li>
-						<li><p className="card-text">Jessore Board</p></li>
-						<li><p className="card-text">Khulna, Bangladesh</p></li>
-					</ul>
 				</div>
-				
-			</div>
-			</div>
 			</div>
 		</div>
 	</section>
@@ -287,6 +277,102 @@ const Portfolio = () => {
 				
 			</div>
 		</div>
+	</section>
+	<section class="section-faq bg-light pe-0 ps-0"  id="faq">
+		
+		
+		<div className="pt-5 pb-5">
+			<div class="">
+			<h1 class="text-center fw-bold">FAQ</h1>
+		</div>
+		<div class="pborder">
+			<div class="aborder"></div>
+		</div>
+		</div>
+		<div class="container-fluid  pe-0 ps-0 ">
+			{/*<img src="images/bg2.png" className="img-fluid" alt=""/>*/}
+			<div className="container ">
+				<div className="faq-container ">
+					<div className="row d-flex justify-content-end">
+						
+						<div className="col-md-4 ">
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									My working area.
+									</button>
+									</h2>
+									<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											I am a frontend developer.I am very much comfortable with Figma to Html comversion.
+											You can see my skills on portfolio .I have attached some of my projects here, 
+											which are developed by me.
+
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item my-2 border">
+									<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									My strong point!
+									</button>
+									</h2>
+									<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											I am a quick learner as well as an energetic person.I try my best to complete a project .
+											It's like challenge to me.If i get proper resouces i can do anything,this is what i beleve.
+
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item my-2 border">
+									<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									My weakness.
+									</button>
+									</h2>
+									<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											I always try to improve myself. I am working to improve my communication skill.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item my-2 border">
+									<h2 class="accordion-header" id="headingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Why should Hire me?
+									</button>
+									</h2>
+									<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											As i said, i am a quick learner and an energetic person, even though i don't have professional experience i am confident that i will be able to offer something valuable to the company's success.
+											Your company would undoubtedly provide an amazing platform for me to develop my skills in the competitive world.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item my-2 border">
+									<h2 class="accordion-header" id="headingFive">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									My goals.
+									</button>
+									</h2>
+									<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											My immediate goal is to get a job in a growth-oriented company.My long-term goal will depend on where the company goes.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
 	</section>
 	<section className="section-8 bg-light pt-5 pb-5" id="contact">
 		<div className="container">
@@ -327,7 +413,7 @@ const Portfolio = () => {
 									<span className="fa fa-map-marker"></span>
 								</div>
 								<div className="">
-									<p className="mt-3 fw-bold"> Shalgrampur, Shakhipur, Tangail,Bangladesh</p>
+									<p className="mt-3"> Shalgrampur, Shakhipur, Tangail,Bangladesh</p>
 								</div>
 							</div>
 							<div className="dbox w-100 d-flex align-items-start">
@@ -335,7 +421,7 @@ const Portfolio = () => {
 									<span className="fa fa-phone"></span>
 								</div>
 								<div className="">
-									<p className="mt-3 fw-bold">+8801306092416,+8801931989411</p>
+									<p className="mt-3">+8801306092416,+8801931989411</p>
 								</div>
 							</div>
 							<div className="dbox w-100 d-flex align-items-start">
@@ -343,7 +429,7 @@ const Portfolio = () => {
 									<span className="fa fa-paper-plane"></span>
 								</div>
 								<div className="">
-									<p className="mt-3 fw-bold">ahmedmaruf.baust@gmail.com</p>
+									<p className="mt-3">ahmedmaruf.baust@gmail.com</p>
 								</div>
 							</div>
 						</div>
@@ -353,6 +439,6 @@ const Portfolio = () => {
 		</div>
 	</section>
 </div>
-	)
+)
 }
 export default Portfolio
