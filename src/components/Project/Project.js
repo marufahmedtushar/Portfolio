@@ -15,7 +15,7 @@ const Project = (props) => {
 			<div className="col-md-8">
 				<div className="card-body">
 					<h5 className="card-title fw-semibold text-capitalize">{name}</h5>
-					<a className=" livelink-bg text-light btn  w-100 rounded" href={link} target="_blank">Live</a>
+					<a className=" livelink-bg text-light btn  w-100 rounded fw-bold" href={link} target="_blank">Live</a>
 					
 				</div>
 			</div>

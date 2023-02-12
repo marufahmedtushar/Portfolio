@@ -73,6 +73,12 @@ border-radius: 5px;
 width: 8%;
 
 }
+.fborder{
+border: 2px solid #ffffff;
+border-radius: 5px;
+width: 8%;
+
+}
 
 .cborder{
 border: 2px solid #ffffff;
@@ -131,16 +137,16 @@ width: 25%;
 
 
 /*Section4*/
-.section4 .container{
+.section4 .container-fluid{
 	background-color: #289BDE;
 	padding: 20px;
 }
 
-.section4 .container .modal-details a{
+.section4 .container-fluid .container .modal-details a{
 	color: #289BDE;
 	border-radius: 30px;
 }
-.section4 .container .modal-details a:hover{
+.section4 .container-fluid .container .modal-details a:hover{
 	font-weight: bold;
 	background-color: ;
 	border: 2px solid #289BDE;
@@ -157,8 +163,14 @@ width: 25%;
 .section5 .container .elements h5{
 	font-size: 45px;
 }
+.section5 .container .row .skill_margin .card img{
+	border-radius: 15px;
+}
+.section5 .container .row .skill_margin .card .card-body h5{
+	background-color: #289BDE;
+	color: #ffffff;
 
-
+}
 
 
 
@@ -224,15 +236,15 @@ width: 25%;
   height: 1000px;
   width: 100%!important;
 }
-.section-faq .container-fluid .faq-container .col-md-4{
+.section-faq .container-fluid .faq-container .col-md-6{
 margin-top:220px ;
 }
-.section-faq .container-fluid .faq-container .col-md-4 .accordion-item,.section-faq .container-fluid .faq-container .col-md-4 .accordion-item .accordion-button{
+.section-faq .container-fluid .faq-container .col-md-6 .accordion-item,.section-faq .container-fluid .faq-container .col-md-6 .accordion-item .accordion-button{
 	background-color: #000000;
 	color: #ffffff;
 }
 
-.section-faq .container-fluid .faq-container .col-md-4 .accordion-item button:focus{
+.section-faq .container-fluid .faq-container .col-md-6 .accordion-item button:focus{
 	outline: 0;
 	box-shadow: none !important;
 	border: 1px solid #ffffff;
@@ -339,8 +351,8 @@ footer {
 	/*Section1*/
 	
 	.section1:before{
-		top: 95px;
-  		height: 955px;
+		top: 195px;
+  	height: 900px!important;
 	}
 
 	/*Section2*/
@@ -444,6 +456,9 @@ footer {
 	}
 	.section3 .container .card .row .col-lg-4 img{
 		width: 100%;
+		height: 400px!important;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
 	}
 	.section3 .container .card .row .col-lg-8{
 		padding: 0!important;
@@ -497,44 +512,9 @@ footer {
 	margin-top: 15px!important;
 }
 
-.section5 .container .row .col-md-4 .service-box {
-  background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-}
 
-.section5 .container .row .col-md-4 .service-box:hover .ico-circle {
-  transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
 
-.section5 .container .row .col-md-4 .service-box .service-ico {
-  margin-bottom: 1rem;
-  color: #1e1e1e;
-}
 
-.section5 .container .row .col-md-4 .service-box .ico-circle {
-  transition: all 500ms ease;
-  font-size: 4rem;
-}
-
-.section5 .container .row .col-md-4 .service-box .s-title {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: .4rem 0;
-}
-
-.section5 .container .row .col-md-4 .service-box .s-description {
-  color: #4e4e4e;
-}
-
-	.section5 .container .elements h5{
-		font-size: 20px;
-	}
 
 	
 	
@@ -576,18 +556,22 @@ footer {
 	}
 
 /*Section FAQ*/
-.section-faq .container-fluid .faq-container .col-md-4{
-margin-top:325px ;
+.section-faq .container-fluid{
+	height:100%!important ;
 }
-.section-faq .container-fluid .faq-container .col-md-4 .accordion-item,.section-faq .container-fluid .faq-container .col-md-4 .accordion-item .accordion-button{
+
+.section-faq .container-fluid .faq-container .col-md-6{
+margin-top:45px ;
+}
+.section-faq .container-fluid .faq-container .col-md-6 .accordion-item,.section-faq .container-fluid .faq-container .col-md-6 .accordion-item .accordion-button{
 	opacity: 0.8;
 	border: 0!important;
 }
-.section-faq .container-fluid .faq-container .col-md-4 .accordion-item .accordion-header:focus{
+.section-faq .container-fluid .faq-container .col-md-6 .accordion-item .accordion-header:focus{
 
 	border: 0!important
 }
-.section-faq .container-fluid .faq-container .col-md-4 .accordion-item button:focus{
+.section-faq .container-fluid .faq-container .col-md-6 .accordion-item button:focus{
 	border: 0!important
 }
 /*Section8*/

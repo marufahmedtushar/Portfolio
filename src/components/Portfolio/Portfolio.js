@@ -163,14 +163,16 @@ return (
 	</section>
 	{/*Section-4*/}
 	<section className="section4 bg-light pt-5 pb-5">
-		<div className="container rounded-3 p-5 d-flex justify-content-between">
-			<div className="modal-details">
+		<div className="container-fluid rounded-3 p-5 ">
+			<div className="container d-flex justify-content-between">
+				<div className="modal-details">
 				<h3 className="text-light">Hire Me !!</h3>
 				<p className="text-light">If you want to hire me <br/> contact me now.</p>
 			</div>
 			
 			<div className="modal-details d-flex justify-content-center align-items-center">
 				<a href="#contact" className="btn btn-light ">Contact Now</a>
+			</div>
 			</div>
 		</div>
 	</section>
@@ -278,24 +280,22 @@ return (
 			</div>
 		</div>
 	</section>
-	<section class="section-faq bg-light pe-0 ps-0"  id="faq">
+	<section class="section-faq bg-light  pe-0 ps-0"  id="faq">
 		
-		
-		<div className="pt-5 pb-5">
+		<div class="container-fluid  pe-0 ps-0 ">
+			<div className="pt-5 pb-5">
 			<div class="">
-			<h1 class="text-center fw-bold">FAQ</h1>
+			<h1 class="text-center text-light fw-bold">FAQ</h1>
 		</div>
 		<div class="pborder">
-			<div class="aborder"></div>
+			<div class="fborder"></div>
 		</div>
 		</div>
-		<div class="container-fluid  pe-0 ps-0 ">
-			{/*<img src="images/bg2.png" className="img-fluid" alt=""/>*/}
 			<div className="container ">
 				<div className="faq-container ">
 					<div className="row d-flex justify-content-end">
 						
-						<div className="col-md-4 ">
+						<div className="col-md-6 ">
 							<div class="accordion" id="accordionExample">
 								<div class="accordion-item">
 									<h2 class="accordion-header" id="headingOne">
