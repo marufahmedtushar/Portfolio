@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ useState, useEffect } from 'react'
 import './Header.css';
 
 
@@ -6,11 +6,22 @@ const Header = () => {
 
 
 const [showMediaIcon,setShowMediaIcon] = useState(false);
+const[theme, setTheme] = useState("light-theme");
+const toggleTheme = () =>{
+	if(theme === "dark-theme"){
+		setTheme("light-theme");
+	}else {
+		setTheme("dark-theme");
+	}
+}
+useEffect(() => {
+	document.body.className = theme;
+}, [theme]);
 
 
 	return (
 <div>
-	<nav className="navbar navbar-expand-lg bg-light fixed-top p-2 shadow" id="nav">
+	<nav className="navbar navbar-expand-lg fixed-top p-2 shadow" id="nav">
 		<div className="container">
 			<a className="navbar-brand fw-bold" href="">Maruf Ahmed Tushar</a>
 			<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +30,7 @@ const [showMediaIcon,setShowMediaIcon] = useState(false);
 			<div className="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul className="navbar-nav  mb-2 mb-lg-0">
 					<li className="nav-item">
-						<a className="nav-link active" aria-current="page" href="#home">Home</a>
+						<a className="nav-link" aria-current="page" href="#home">Home</a>
 					</li>
 					<li className="nav-item">
 						<a className="nav-link" href="#about">About</a>
@@ -40,6 +51,9 @@ const [showMediaIcon,setShowMediaIcon] = useState(false);
 					<li className="nav-item">
 						<a className="nav-link" href="#contact" >Contact</a>
 					</li>
+					<li className="nav-item">
+						<a className=" btn" onClick ={() => toggleTheme()}>Mood</a>
+					</li>
 				</ul>
 				
 			</div>
@@ -47,7 +61,7 @@ const [showMediaIcon,setShowMediaIcon] = useState(false);
 		</div>
 	</nav>
 	
-		<nav className="navbar navbar-expand-md fixed-top bg-light p-4 shadow" id="nav1">
+		<nav className="navbar navbar-expand-md fixed-top  p-4 shadow" id="nav1">
 		<div className="container">
 			<a className="navbar-brand fw-bold" href="#home">Maruf Ahmed Tushar</a>
 			<button  className="navbar-toggler" type="button" aria-label="Toggle navigation">
@@ -78,6 +92,9 @@ const [showMediaIcon,setShowMediaIcon] = useState(false);
 					<li className="nav-item">
 						<a className="nav-link" href="#contact" >Contact</a>
 					</li>
+					<li className="nav-item">
+						<a className=" btn" onClick ={() => toggleTheme()}>Mood</a>
+					</li>
 				</ul>
 				
 			</div>
@@ -85,7 +102,7 @@ const [showMediaIcon,setShowMediaIcon] = useState(false);
 		</div>
 	</nav>
 	
-	<nav className="navbar navbar-expand-lg bg-light p-4 shadow" id="nav2">
+	<nav className="navbar navbar-expand-lg  p-4 shadow" id="nav2">
 		<div className="container">
 			<a className="navbar-brand fw-bold" href="#">Maruf Ahmed Tushar</a>
 			<div className="d-flex justify-content-between">
@@ -117,6 +134,9 @@ const [showMediaIcon,setShowMediaIcon] = useState(false);
 					</li>
 					<li className="nav-item">
 						<a className="nav-link" href="#contact" >Contact</a>
+					</li>
+					<li className="nav-item">
+						<a className=" btn" onClick ={() => toggleTheme()}>Mood</a>
 					</li>
 				</ul>
 				

@@ -71,7 +71,7 @@ return (
 			</div>
 		</div>
 	</section>
-	<section className="intro bg-light pt-5 pb-5 ">
+	<section className="intro main-bg pt-5 pb-5 ">
 		<div className="container">
 			<div className="card-heading">
 				<h1 className="text-center fw-bold">Introduction</h1>
@@ -80,7 +80,7 @@ return (
 				<div className="aborder"></div>
 			</div>
 			<div className="card border-0 shadow-lg mt-5">
-				<div className="card-body p-5">
+				<div className="card-body p-5 rounded">
 					<p className="card-text">I am a Computer science graduate who is currently looking for
 						an organization where I can give my 100% to prove my ability and improve my skills.
 						My passion is about Web Development and capable of completing couple of self-made
@@ -91,15 +91,15 @@ return (
 		</div>
 	</section>
 	{/*Section-3*/}
-	<section className="section3 bg-light pt-5 pb-2" id="about">
+	<section className="section3 main-bg pt-5 pb-2" id="about">
 		<div className="container">
 			<div className="card mb-3 border-0 shadow-lg">
 				<div className="row g-0">
 					<div className="col-md-6 col-lg-4 ">
 						<img src="images/img.png" className="img-fluid h-100 rounded-start" alt="..."/>
 					</div>
-					<div className="col-md-6  col-lg-8 py-5 px-4">
-						<div className="card-body py-5 px-4">
+					<div className="col-md-6  col-lg-8 py-5 px-4 rounded-end">
+						<div className="card-body py-5 px-4 ">
 							<h5 className="card-title fw-bold text-center">About Me</h5>
 							<div className="pborder">
 								<div className="bborder"></div>
@@ -133,7 +133,7 @@ return (
 		</div>
 	</section>
 	{/*Section-2*/}
-	<section className="section2 bg-light pt-5 pb-2" id="projects">
+	<section className="section2 main-bg pt-5 pb-2" id="projects">
 		<div className="container">
 			<div className="course-details">
 				<h1 className="text-center fw-bold">Projects</h1>
@@ -162,9 +162,9 @@ return (
 		</div>
 	</section>
 	{/*Section-4*/}
-	<section className="section4 bg-light pt-5 pb-5">
-		<div className="container-fluid rounded-3 p-5 ">
-			<div className="container d-flex justify-content-between">
+	<section className="section4 main-bg pt-5 pb-5">
+		
+			<div className="container d-flex justify-content-between rounded-3 p-5">
 				<div className="modal-details">
 				<h3 className="text-light">Hire Me !!</h3>
 				<p className="text-light">If you want to hire me <br/> contact me now.</p>
@@ -174,10 +174,10 @@ return (
 				<a href="#contact" className="btn btn-light ">Contact Now</a>
 			</div>
 			</div>
-		</div>
+		
 	</section>
 	{/*Section5*/}
-	<section className="section5 bg-light pt-5 pb-5" id="skills">
+	<section className="section5 main-bg pt-5 pb-5" id="skills">
 		<div className="container">
 			<div className="elements d-flex justify-content-center">
 				<h5 className=" fw-bold">Skills</h5>
@@ -198,7 +198,7 @@ return (
 		</div>
 	</section>
 	{/*Section6*/}
-	<section className="section-6 bg-light pt-5 pb-5" id="education">
+	<section className="section-6 main-bg pt-5 pb-5" id="education">
 		<div className="container">
 			<div className="education-header">
 				<h1 className="text-center fw-bold">Education</h1>
@@ -257,7 +257,7 @@ return (
 			</div>
 		</div>
 	</section>
-	<section class="section-7 bg-light pt-5 pb-5" id="experience">
+	<section class="section-7 main-bg pt-5 pb-5" id="experience">
 		<div class="container">
 			<div class="education-header">
 				<h1 class="text-center fw-bold">Experience</h1>
@@ -280,7 +280,7 @@ return (
 			</div>
 		</div>
 	</section>
-	<section class="section-faq bg-light  pe-0 ps-0"  id="faq">
+	<section class="section-faq main-bg  pe-0 ps-0"  id="faq">
 		
 		<div class="container-fluid  pe-0 ps-0 ">
 			<div className="pt-5 pb-5">
@@ -374,7 +374,7 @@ return (
 		
 		
 	</section>
-	<section className="section-8 bg-light pt-5 pb-5" id="contact">
+	<section className="section-8 main-bg pt-5 pb-5" id="contact">
 		<div className="container">
 			<div className="contact-header">
 				<h1 className="text-center fw-bold">Contact</h1>
@@ -407,7 +407,7 @@ return (
 						</div>
 					</div>
 					<div className="col-lg-4 col-md-4 col-sm-12 g-0" >
-						<div className="card border-0 p-4" style={{ height:'425px', backgroundColor: '#289BDE'}}>
+						<div className="card border-0 p-4" >
 							<div className="dbox w-100 d-flex align-items-start">
 								<div className="icon d-flex align-items-center justify-content-center">
 									<span className="fa fa-map-marker"></span>
