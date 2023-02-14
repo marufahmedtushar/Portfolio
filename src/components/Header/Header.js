@@ -1,25 +1,19 @@
 import React,{ useState, useEffect } from 'react'
 import './Header.css';
-
-
 const Header = () => {
-
-
 const [showMediaIcon,setShowMediaIcon] = useState(false);
 const[theme, setTheme] = useState("light-theme");
 const toggleTheme = () =>{
-	if(theme === "dark-theme"){
-		setTheme("light-theme");
-	}else {
-		setTheme("dark-theme");
-	}
+if(theme === "dark-theme"){
+setTheme("light-theme");
+}else {
+setTheme("dark-theme");
+}
 }
 useEffect(() => {
-	document.body.className = theme;
+document.body.className = theme;
 }, [theme]);
-
-
-	return (
+return (
 <div>
 	<nav className="navbar navbar-expand-lg fixed-top p-2 shadow" id="nav">
 		<div className="container">
@@ -51,8 +45,13 @@ useEffect(() => {
 					<li className="nav-item">
 						<a className="nav-link" href="#contact" >Contact</a>
 					</li>
-					<li className="nav-item">
-						<a className=" btn" onClick ={() => toggleTheme()}>Mood</a>
+					<li className="nav-item mt-2">
+						<input type="checkbox" class="checkbox " id="checkbox"onClick ={() => toggleTheme()}  />
+						<label for="checkbox" class="label">
+							<i class="fas fa-moon"></i>
+							<i class='fas fa-sun'></i>
+							<div class='ball'></div>
+						</label>
 					</li>
 				</ul>
 				
@@ -61,12 +60,12 @@ useEffect(() => {
 		</div>
 	</nav>
 	
-		<nav className="navbar navbar-expand-md fixed-top  p-4 shadow" id="nav1">
+	<nav className="navbar navbar-expand-md fixed-top  p-4 shadow" id="nav1">
 		<div className="container">
 			<a className="navbar-brand fw-bold" href="#home">Maruf Ahmed Tushar</a>
 			<button  className="navbar-toggler" type="button" aria-label="Toggle navigation">
-				<span className="navbar-toggler-icon" onClick ={() => setShowMediaIcon (!showMediaIcon)}></span>
-				</button>
+			<span className="navbar-toggler-icon" onClick ={() => setShowMediaIcon (!showMediaIcon)}></span>
+			</button>
 			
 			<div >
 				<ul className={showMediaIcon ? "navbar-nav" :  "collapse navbar-collapse"} >
@@ -92,8 +91,13 @@ useEffect(() => {
 					<li className="nav-item">
 						<a className="nav-link" href="#contact" >Contact</a>
 					</li>
-					<li className="nav-item">
-						<a className=" btn" onClick ={() => toggleTheme()}>Mood</a>
+					<li className="nav-item mt-2">
+						<input type="checkbox" class="checkbox " id="checkbox"onClick ={() => toggleTheme()}  />
+						<label for="checkbox" class="label">
+							<i class="fas fa-moon"></i>
+							<i class='fas fa-sun'></i>
+							<div class='ball'></div>
+						</label>
 					</li>
 				</ul>
 				
@@ -135,8 +139,13 @@ useEffect(() => {
 					<li className="nav-item">
 						<a className="nav-link" href="#contact" >Contact</a>
 					</li>
-					<li className="nav-item">
-						<a className=" btn" onClick ={() => toggleTheme()}>Mood</a>
+					<li className="nav-item mt-2">
+						<input type="checkbox" class="checkbox " id="checkbox"onClick ={() => toggleTheme()}  />
+						<label for="checkbox" class="label">
+							<i class="fas fa-moon"></i>
+							<i class='fas fa-sun'></i>
+							<div class='ball'></div>
+						</label>
 					</li>
 				</ul>
 				
@@ -145,6 +154,6 @@ useEffect(() => {
 		</div>
 	</nav>
 </div>
-	)
+)
 }
 export default Header

@@ -336,6 +336,11 @@ width: 25%;
   height: 1000px;
   width: 100%!important;
 }
+
+.section-faq .container-fluid div div h1{
+	font-size: 45px;
+}
+
 .section-faq .container-fluid .faq-container .col-md-6{
 margin-top:220px ;
 }
@@ -441,6 +446,52 @@ footer {
 	text-decoration: none;
 	padding: 5px;
 	color: white;
+}
+
+
+/*Light to dark mood Button*/
+
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
 }
 
 
@@ -550,11 +601,11 @@ footer {
 	}
 	/*Intro*/
 	.intro .container .card-heading h1{
-		font-size: 20px !important;
+		font-size: 35px!important;
 	}
 	/*Section2*/
 	.section2 .container .course-details h1{
-		font-size: 20px;
+		font-size: 35px!important;
 	}
 	.section2 .container .courses .col-md-4 img{
 		width: 100%;
@@ -584,7 +635,7 @@ footer {
 		padding: 0!important;
 	}
 	.section3 .container .card .row .col-lg-8 .card-body h5 {
-    font-size: 20px;
+    font-size: 35px!important;
 	}
 	.section3 .container .card .row .col-lg-8 .card-body .info h5{
 		font-size: 25px;
@@ -626,6 +677,10 @@ footer {
 	margin-top: 15px!important;
 }
 
+.section5 .container .elements h5{
+	font-size: 35px!important;
+}
+
 
 
 
@@ -634,6 +689,9 @@ footer {
 	
 
 	/*Section6*/
+	.section-6 .container .education-header h1{
+		font-size: 35px!important;
+	}
 
 	.section-6 .container .card .card-body div{
 		display: flex;
@@ -646,6 +704,9 @@ footer {
 	}
 
 	/*Section7*/
+	.section-7 .container .education-header h1{
+		font-size: 35px!important;
+	}
 	.section-7 .container .card .card-body div{
 		display: flex;
 		justify-content: center;
@@ -674,6 +735,10 @@ footer {
 	height:100%!important ;
 }
 
+.section-faq .container-fluid div div h1{
+	font-size: 35px!important;
+}
+
 .section-faq .container-fluid .faq-container .col-md-6{
 margin-top:45px ;
 }
@@ -689,6 +754,10 @@ margin-top:45px ;
 	border: 0!important
 }
 /*Section8*/
+.section-8 .container .contact-header h1{
+	font-size: 35px!important;
+}
+
 	.section-8 .container .row .card-height{
 	height: 440px!important;
 }
