@@ -19,6 +19,8 @@ body{
 	--nav-togggler:#dddddd;
 	--nav-togggler-color:#000000;
 	--card-border:#000000;
+	--card-bg3:#6f42c1;
+
 }
 
 .light-theme{
@@ -33,6 +35,8 @@ body{
 	--nav-togggler:#ffffff;
 	--nav-togggler-color:#ffffff;
 	--card-border:#ffffff;
+	--card-bg3:#ffffff;
+
 }
 
 
@@ -164,6 +168,27 @@ align-items: center;
 /*	border-bottom-left-radius:5px ;
 	border-bottom-right-radius:5px ;*/
 	color: var(--p-color);
+}
+
+.section2 .container .courses .row .col-lg-6 .card .row .col-md-8 .card-body .modal-dialog .modal-body .card-body{
+	background-color: var(--card-bg3);
+	color: var(--p-color);
+}
+.section2 .container .courses .row .col-lg-6 .card .row .col-md-8 .card-body .modal-dialog .modal-body img{
+height: 300px;
+width: 700px;
+}
+
+.section2 .container .courses .row .col-lg-6 .card .row .col-md-8 .card-body .modal-dialog{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 0.5rem;
+background-color: var(--card-bg3);
+z-index: 1;
+
+
 }
 
 .section2 .container .courses .col-md-8 .card-body .livelink-bg{
@@ -520,6 +545,9 @@ footer {
 	.section2 .container .course-details h1{
 		font-size: 30px;
 	}
+
+
+	
 	
 
 	/*Section3*/
@@ -614,6 +642,15 @@ footer {
 		font-size: 22px;
 		font-weight: bold;
 	}
+
+.section2 .container .courses .row .col-lg-6 .card .row .col-md-8 .card-body .modal-dialog{
+	padding: 18px!important;
+}
+
+	.section2 .container .courses .row .col-lg-6 .card .row .col-md-8 .card-body .modal-dialog .modal-body img{
+	height: 150px!important;
+	width: 300px!important;
+}
 	
 	/*Section3*/
 	.section3{

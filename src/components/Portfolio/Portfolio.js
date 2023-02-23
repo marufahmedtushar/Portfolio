@@ -7,19 +7,19 @@ import '../../frontend/css/style.css';
 import Typical from 'react-typical';
 const projects = [
 {id:1, name:'Coding Hero', technologies:'HTML5, CSS3, Bootstrap 4', features:'Tried to make a copy of the Programming Hero’s Course landing page . Login and Registration page are also included.',
-img:'images/code.png',link:'https://marufahmedtushar.github.io/Coding_Hero-demo.github.io/index.html'},
+img:'images/code.png',img1:'images/code1.png',link:'https://marufahmedtushar.github.io/Coding_Hero-demo.github.io/index.html'},
 {id:2, name:'SKOKOV', technologies:'HTML5, CSS3, Bootstrap 4', features:'Here i have tried to convert a psd design to html and this is responsive too.',
-img:'images/skokov.jpg',link:'https://marufahmedtushar.github.io/SKOKOV.github.io/index.html'},
+img:'images/skokov.jpg',img1:'images/skokov1.jpg',link:'https://marufahmedtushar.github.io/SKOKOV.github.io/index.html'},
 {id:3, name:'Abacus Convention Center', technologies:'HTML5, CSS3, Bootstrap 5.', features:'This is a figma to html converted static site and also responsive.',
-img:'images/abacus.jpg',link:'https://marufahmedtushar.github.io/convention-center/index.html'},
+img:'images/abacus.jpg',img1:'images/abacus1.jpg',link:'https://marufahmedtushar.github.io/convention-center/index.html'},
 {id:4, name:'Wise Learners', technologies:'HTML5, CSS3, Bootstrap 5', features:'This is a figma to html converted static site and also responsive.',
-img:'images/wise.png',link:'https://wise-learners.netlify.app/' },
+img:'images/wise.png',img1:'images/wise1.png',link:'https://wise-learners.netlify.app/' },
 {id:5, name:'Best Five', technologies:' HTML5, CSS3, Bootstrap 5, JavaScript', features:'This is a figma to html converted static site and also responsive.',
-img:'images/bestfive.png',link:'https://football-team-maker.netlify.app/' },
+img:'images/bestfive.png',img1:'images/bestfive1.png',link:'https://football-team-maker.netlify.app/' },
 {id:6, name:'Fast News', technologies:' HTML5, CSS3, Bootstrap 5, JavaScript, REST API', features:'This is a figma to html converted static site and also responsive.',
-img:'images/fastnews.png',link:'https://fast-news-blogsite.netlify.app/' },
+img:'images/fastnews.png',img1:'images/fastnews1.png',link:'https://fast-news-blogsite.netlify.app/' },
 {id:7, name:'React-Quizers', technologies:'HTML5, CSS3, Bootstrap 5, React ,REST API', features:'This is a online quiz test site. User can test themselves by giving answer of some questions and user could see the correct answer if user want.If user clicks right/wrong answer the current page will notify him by showing toast.',
-img:'images/reactq.png',link:'https://react-quizers.netlify.app/' }
+img:'images/reactq.png',img1:'images/reactq1.png',link:'https://react-quizers.netlify.app/' }
 ]
 const skills = [
 {id:1,name:'HTML',img:'images/html5.png'},
