@@ -8,34 +8,38 @@ body{
 }
 
 .dark-theme{
-	--common-color:#6f42c1;
-	--main-bg:#000000;
+	--common-color:#7400FF;
+	--main-bg:#1B0044;
 	--heading-color:#ffffff;
-	--card-bg: #212529;
+	--card-bg: #27215D;
 	--p-color:#ffffff;
-	--card-bg2:#6f42c1;
+	--card-bg2:#7400FF;
 	--brand:#ffffff;
-	--nav:#212529;
+	--nav:#1B0044;
 	--nav-togggler:#dddddd;
 	--nav-togggler-color:#000000;
-	--card-border:#000000;
-	--card-bg3:#6f42c1;
+	--card-border:#27215D;
+	--card-bg3:#27215D;
+	--modal-border:#7400FF;
+	--nav-hover:#ffffff;
 
 }
 
 .light-theme{
-	--common-color:#289BDE;
+	--common-color:#00A1FF;
 	--main-bg:#f8f9fa;
 	--heading-color:#000000;
 	--card-bg:#ffffff;
 	--p-color:#000000;
-	--card-bg2:#289BDE;
+	--card-bg2:#00A1FF;
 	--brand:#000000;
 	--nav:#ffffff;
 	--nav-togggler:#ffffff;
 	--nav-togggler-color:#ffffff;
 	--card-border:#ffffff;
 	--card-bg3:#ffffff;
+	--modal-border: #00A1FF;
+	--nav-hover:#000000;
 
 }
 
@@ -66,7 +70,9 @@ nav .container .navbar-brand{
 nav .container ul li a{
 	color: var(--brand);
 }
-
+nav .container ul li a:hover{
+	color: var(--nav-hover);
+}
 nav .container .collapse ul li{
 	padding: 5px 15px 5px 15px;
 }
@@ -187,7 +193,7 @@ transform: translate(-50%, -50%);
 border-radius: 0.5rem;
 background-color: var(--card-bg3);
 z-index: 1;
-
+border: 2px solid var(--modal-border);
 
 }
 
